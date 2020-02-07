@@ -33,9 +33,13 @@ module.exports = (env = {}) => {
   };
   return {
     mode: isProd ? "production" : isDev && "development",
+    entry: './src/index.jsx',
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: isDev ? "script/script-[hash:8].js" : "script/bundle-[hash:8].js"
+    },
+    resolve: {
+      extensions: ['.js', '.jsx'],
     },
     devServer: {
       contentBase: path.join(__dirname, "dist"),
@@ -81,6 +85,13 @@ module.exports = (env = {}) => {
         {
           test: /\.s[ac]ss$/,
           use: [...getStyleLoaders(), "sass-loader"]
+        },
+        // loading Fix in code
+        { 
+          enforce: 'pre',
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          loader: 'eslint-loader',
         },
         // Loading JS
         {
