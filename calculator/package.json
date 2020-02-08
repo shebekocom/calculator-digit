@@ -3,15 +3,8 @@
   "version": "1.0.0",
   "description": "\"Calculator app on React JS\"",
   "main": "webpack.config.js",
-  "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack --env.mode=production",
-    "dev": "webpack",
-    "clean": "rm -f -r dist",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Nikolay Shebeko",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shebekocom/calculator-digit.git"
@@ -19,8 +12,14 @@
   "keywords": [
     "calculator"
   ],
-  "author": "Nikolay Shebeko",
-  "license": "ISC",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --env.mode=production",
+    "dev": "webpack",
+    "clean": "rm -f -r dist",
+    "lint:fix": "eslint --ext .jsx,.js,.ts src/ --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "browserslist": [
     "last 2 chrome versions",
     "last 2 firefox versions",
@@ -29,6 +28,8 @@
   ],
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
+    "core-js": "^3.6.4",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -45,6 +46,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
