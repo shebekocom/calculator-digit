@@ -5,10 +5,12 @@ import LoanItemButton from '../loan-item-button/loan-item-button';
 import Toolkit from '../toolkit/toolkit';
 
 const LoanListButton = ({ loanList }) => {
-  const listItems = loanList.terms.map(el => (
+  const listTerms = loanList.terms.map(el => (
     <LoanItemButton key={el.toString()} textItemButton={el} />
   ));
-  console.log(listItems);
+  const listApr = loanList.apr.map(el => (
+    <LoanItemButton key={el.toString()} textItemButton={el} />
+  ));
   return (
     <div className="loan_list_button">
       <div>
@@ -16,12 +18,15 @@ const LoanListButton = ({ loanList }) => {
           Term (Months)
           <Toolkit />
         </p>
-        <div className="loan_list_term">{listItems}</div>
+        <div className="loan_list_term">{listTerms}</div>
       </div>
       <div>
-        <p className="title_loan">Approx. Credit Score</p>
+        <p className="title_loan">
+          Approx. Credit Score
+          <Toolkit />
+        </p>
         <Toolkit />
-        <LoanItemButton textItemButton={loanList.apr} />
+        <div className="loan_list_term">{listApr}</div>
       </div>
     </div>
   );

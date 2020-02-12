@@ -15,7 +15,7 @@ const App = () => {
       traidIn: '0',
       downPayment: '0',
       creditScore: 'Exellent',
-      apr: '3',
+      apr: [650, 700, 750, 850],
     },
     lease: {
       zipCode: '918999',

@@ -9,7 +9,7 @@ export default class LoanItemButton extends Component {
 
   render() {
     const { value } = this.state;
-    return <div сlassName="loan_item_input">{value}</div>;
+    return <div сlassName="loan_item_button">{value}</div>;
   }
 }
 
