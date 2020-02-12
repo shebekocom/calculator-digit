@@ -1,7 +1,8 @@
-@import "./components/calculator-tabs/calculator-tabs.scss";
-@import  "./components/loan-tab/loan-tab.scss";
-@import  "./components/lease-tab/lease-tab.scss";
-@import  "./components/infocard/infocard.scss";
+@import './components/calculator-tabs/calculator-tabs.scss';
+@import './components/loan-tab/loan-tab.scss';
+@import './components/lease-tab/lease-tab.scss';
+@import './components/infocard/infocard.scss';
+@import 'components/loan-list-button/loan-list-button.scss';
 
 .app {
   display: flex;
