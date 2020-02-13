@@ -1,5 +1,5 @@
 import React from 'react';
-import arrowIgm from '../../assets/img/arrow.svg';
+import arrowIgm from '../../assets/img/arrow.png';
 
 const InfoCardHeader = () => {
   return (

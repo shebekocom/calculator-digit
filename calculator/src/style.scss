@@ -35,7 +35,8 @@ body, div {
   transform: translate(-50%, -50%);
 }
 
-.calculator_wrapper {
+.calculator_wrapper_loan {
+  display: none;
   width: 560px;
   height: 600px;
   border: 1px solid #e6e6e6;
@@ -44,9 +45,23 @@ body, div {
   background-color: #FAFAFA;
 }
 
+.calculator_wrapper_lease {
+  display: none;
+  width: 560px;
+  height: 600px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-right: 20px;
+  background-color: #ffffff;
+}
+
 .infocard_wrapper {
   width: 365px;
   height: 550px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
+}
+
+.active{
+  display: block;
 }
