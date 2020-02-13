@@ -8,24 +8,20 @@ const LoanListButton = ({ loanList }) => {
   const listTerms = loanList.terms.map(el => (
     <LoanItemButton key={el.toString()} textItemButton={el} />
   ));
-  const listApr = loanList.apr.map(el => (
+  const listApr = loanList.creditScore.map(el => (
     <LoanItemButton key={el.toString()} textItemButton={el} />
   ));
   return (
     <div className="loan_list_button">
-      <div>
-        <p className="title_loan">
-          Term (Months)
-          <Toolkit />
-        </p>
+      <div className="loan_list_button-container">
+        <p className="title_loan">Term (Months)</p>
         <div className="loan_list_term">{listTerms}</div>
       </div>
-      <div>
+      <div className="loan_list_button-container">
         <p className="title_loan">
           Approx. Credit Score
           <Toolkit />
         </p>
-        <Toolkit />
         <div className="loan_list_term">{listApr}</div>
       </div>
     </div>
@@ -35,14 +31,14 @@ const LoanListButton = ({ loanList }) => {
 LoanListButton.propTypes = {
   loanList: PropTypes.shape({
     terms: PropTypes.array.isRequired,
-    apr: PropTypes.string.isRequired,
+    creditScore: PropTypes.string.isRequired,
   }),
 };
 
 LoanListButton.defaultProps = {
   loanList: PropTypes.shape({
     terms: '',
-    apr: '',
+    creditScore: '',
   }),
 };
 

@@ -8,8 +8,10 @@ const InfoCard = () => {
   return (
     <div className="infocard">
       <InfoCardHeader />
-      <InfoCardButton />
-      <InfoCardButton />
+      <div className="buttons">
+        <InfoCardButton label="Show the edmunds deal" />
+        <InfoCardButton label="Get dealer offer" />
+      </div>
       <InfoCardFooter />
     </div>
   );

@@ -23,7 +23,7 @@ module.exports = (env = {}) => {
       plugins.push(
         new MiniCssExtractPlugin({
           filename: 'style-[hash:8].css',
-        }),
+        })
       );
     }
     return plugins;
@@ -47,7 +47,7 @@ module.exports = (env = {}) => {
       rules: [
         // Loading Images
         {
-          test: /\.(svg|jpg|png|gif|svg)$/,
+          test: /\.(jpg|png|gif|svg)$/,
           use: [
             {
               loader: 'file-loader',

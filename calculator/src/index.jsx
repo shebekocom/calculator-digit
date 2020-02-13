@@ -12,10 +12,10 @@ const App = () => {
     loan: {
       price: '37813',
       terms: [36, 48, 60, 72, 84],
-      traidIn: '0',
-      downPayment: '0',
-      creditScore: 'Exellent',
-      apr: [650, 700, 750, 850],
+      traidIn: 0,
+      downPayment: 0,
+      creditScore: [650, 700, 750, 850],
+      apr: 3,
     },
     lease: {
       zipCode: '918999',
@@ -28,12 +28,12 @@ const App = () => {
   };
   return (
     <div className="app">
-      <div>
+      <div className="calculator_wrapper">
         <CalculatorTabs />
         <LoanTab loan={state.loan} />
         <LeaseTab />
       </div>
-      <div>
+      <div className="infocard_wrapper">
         <InfoCard />
       </div>
     </div>

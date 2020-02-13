@@ -4,9 +4,12 @@ import Toolkit from '../toolkit/toolkit';
 
 const LoanPrice = () => {
   return (
-    <div сlassName="loan_price">
-      итоговая цена
-      <Toolkit />
+    <div className="loan_price">
+      <p>
+        Eddmunds Suggested Price
+        <Toolkit />
+      </p>
+      <p>$36,372</p>
     </div>
   );
 };

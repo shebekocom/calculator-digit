@@ -1,0 +1,30 @@
+.infocard_header {
+  width: 90%;
+  margin: 0 auto;
+  &--line {
+    border: 1px solid #e6e6e6;
+  }
+}
+
+.infocard_header-mrsp_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  &--msrp_price {
+    font-weight: bold;
+    font-size: 24px;
+    color: #555555;
+    text-decoration: line-through;
+  }
+}
+
+.infocard_header-payment {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--price {
+    text-align: right;
+  }
+}

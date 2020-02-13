@@ -4,7 +4,49 @@
 @import './components/infocard/infocard.scss';
 @import './components/loan-list-button/loan-list-button.scss';
 @import './components/loan-item-button/loan-item-button.scss';
+@import './components/loan-list-input/loan-list-input.scss';
+@import './components/loan-item-imput/loan-item-imput.scss';
+@import './components/loan-price/loan-price.scss';
+@import './components/toolkit/toolkit.scss';
+@import './components/infocard-header/infocard-header.scss';
+@import './components/infocard-button/infocard-button.scss';
+@import './components/infocard/infocard.scss';
+@import './components/infocard-footer/infocard-footer.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+body, div {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  box-sizing: border-box;
+  color: #636363;
+}
 
 .app {
   display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calculator_wrapper {
+  width: 560px;
+  height: 600px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-right: 20px;
+  background-color: #FAFAFA;
+}
+
+.infocard_wrapper {
+  width: 365px;
+  height: 550px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
 }

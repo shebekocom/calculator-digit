@@ -16,8 +16,16 @@ export default class LoanItemInput extends Component {
   render() {
     const { value } = this.state;
     return (
-      <div сlassName="loan_item_input">
-        <input type="text" value={value} onChange={this.handleChange} />
+      <div className="loan_item_input">
+        <div className="loan_input-field--dollar">
+          <p>$</p>
+        </div>
+        <input
+          type="text"
+          className="loan_input-field"
+          value={value}
+          onChange={this.handleChange}
+        />
       </div>
     );
   }

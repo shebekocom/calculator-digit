@@ -1,3 +1,23 @@
 .loan_item_button{
-  margin:10px
+  margin: 10px;
+  width: 25%;
+  height: 100%;
+  border-top: 0;
+  border-bottom: 0;
+  background-color: #ffffff;
+  border-right: 1px solid #E6E6E6;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.loan_item_button:last-child {
+  border-right: 0;
+}
+
+.loan_item_button-text{
+color: #565656;
+font-weight: 500;
 }

@@ -1,9 +1,42 @@
-.calculator_tabs{
+.calculator_tabs {
   display: flex;
+  width: 100%;
 }
-.calculator_tabs-item{
-  width: 100px;
-  height: 50px;
-  background-color:gray;
-  margin: 5px;
+
+.calculator_tabs-item {
+  width: 50%;
+  height: 75px;
+  border: 0;
+  cursor: pointer;
+}
+
+.calculator_tabs-item:last-child {
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  border-bottom-left-radius: 5px;
+  background-color: #ffffff;
+  color: #A9A9A9;
+}
+
+.calculator_tabs-item:first-child {
+  color: #555555;
+}
+
+
+
+.calculator_tabs-item {
+  text-align: center;
+  vertical-align: middle;
+  &--hint {
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 1px;
+  }
+  &--price {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 0px;
+    margin: 0;
+    padding: 0;
+  }
 }
