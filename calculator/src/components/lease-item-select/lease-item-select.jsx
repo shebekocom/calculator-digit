@@ -9,8 +9,10 @@ const LeaseItemSelect = ({ label, data }) => {
   ));
   return (
     <div className="lease_item_select">
-      <p>{label}</p>
-      <select value="тест">{selectArr}</select>
+      <p className="lease_item_select-caption">{label}</p>
+      <select className="lease_item_select-feald" value="тест">
+        {selectArr}
+      </select>
     </div>
   );
 };

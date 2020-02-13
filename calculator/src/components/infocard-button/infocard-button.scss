@@ -14,4 +14,7 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+  &:hover{
+    background: rgba(135,204,45, 0.95);
+  }
 }

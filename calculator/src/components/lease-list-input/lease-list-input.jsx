@@ -7,8 +7,8 @@ const LeaseListInput = ({ leaseList }) => {
   return (
     <div className="lease_list_input">
       <LeaseItemInput label="Home ZIP Code" data={leaseList.zipCode} />
-      <LeaseItemInput label="Traid-in Value" data={leaseList.traidIn} />
-      <LeaseItemInput label="Down Payment" data={leaseList.downPayment} />
+      <LeaseItemInput label="Traid-in Value" sign="$" data={leaseList.traidIn} />
+      <LeaseItemInput label="Down Payment" sign="$" data={leaseList.downPayment} />
     </div>
   );
 };
@@ -16,7 +16,7 @@ const LeaseListInput = ({ leaseList }) => {
 LeaseListInput.propTypes = {
   leaseList: PropTypes.shape({
     zipCode: PropTypes.string.isRequired,
-    downPayment: PropTypes.array.isRequired,
+    downPayment: PropTypes.string.isRequired,
     traidIn: PropTypes.string.isRequired,
   }),
 };

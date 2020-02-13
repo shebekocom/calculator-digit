@@ -16,19 +16,19 @@ class App extends React.Component {
       classLease: 'calculator_wrapper_lease active',
       loan: {
         price: '37813',
-        terms: [36, 48, 60, 72, 84],
+        terms: [12, 24, 36, 48, 72, 84],
         traidIn: 0,
         downPayment: 0,
-        creditScore: [650, 700, 750, 850],
+        creditScore: [650, 750, 850, 900],
         apr: 3,
       },
       lease: {
         zipCode: '918999',
         downPayment: '1000',
         traidIn: '0',
-        creditScore: ['800', '1500', '3000'],
-        annualMiles: ['1000', '12000', '50000', '100000'],
-        term: ['12', '24', '36'],
+        creditScore: ['650', '750', '850', '900'],
+        annualMiles: ['10000', '12000', '15000'],
+        term: ['24', '36', '48'],
       },
     };
     this.changeCalculator = this.changeCalculator.bind(this);

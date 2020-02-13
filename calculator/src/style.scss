@@ -1,20 +1,39 @@
 @import './components/calculator-tabs/calculator-tabs.scss';
-@import './components/loan-tab/loan-tab.scss';
+
+
+// lease calculator
 @import './components/lease-tab/lease-tab.scss';
-@import './components/infocard/infocard.scss';
+@import './components/lease-list-input/lease-list-input.scss';
+@import './components/lease-item-imput/lease-item-imput.scss';
+@import './components/lease-list-selection/lease-list-selection.scss';
+@import './components/lease-item-select/lease-item-select.scss';
+
+
+// loan calculator
+@import './components/loan-tab/loan-tab.scss';
 @import './components/loan-list-button/loan-list-button.scss';
 @import './components/loan-item-button/loan-item-button.scss';
 @import './components/loan-list-input/loan-list-input.scss';
 @import './components/loan-item-imput/loan-item-imput.scss';
 @import './components/loan-price/loan-price.scss';
-@import './components/toolkit/toolkit.scss';
+
+
+// Infocard calculator
 @import './components/infocard-header/infocard-header.scss';
 @import './components/infocard-button/infocard-button.scss';
 @import './components/infocard/infocard.scss';
 @import './components/infocard-footer/infocard-footer.scss';
+
+
+@import './components/toolkit/toolkit.scss';
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
-body, div {
+
+
+body,
+div {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -37,18 +56,20 @@ body, div {
 
 .calculator_wrapper_loan {
   display: none;
+  position: relative;
   width: 560px;
   height: 600px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   margin-right: 20px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .calculator_wrapper_lease {
   display: none;
+  position: relative;
   width: 560px;
-  height: 600px;
+  height: 450px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   margin-right: 20px;
@@ -56,12 +77,13 @@ body, div {
 }
 
 .infocard_wrapper {
+  position: relative;
   width: 365px;
   height: 550px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
 }
 
-.active{
+.active {
   display: block;
 }

@@ -19,6 +19,9 @@
   border-bottom-left-radius: 5px;
   background-color: #ffffff;
   color: #a9a9a9;
+  &:hover{
+    color: #555555;
+  }
 }
 
 .calculator_tabs-item:last-child .active {
@@ -63,6 +66,9 @@
     line-height: 0px;
     box-sizing: border-box;
     margin-top: 35px;
+  }
+  &:hover{
+    color: #555555;
   }
 }
 
